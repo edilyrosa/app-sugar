@@ -1,11 +1,16 @@
-import Image from "next/image";
-import Inicio from "./components/Inicio";
+
+import First from "./components/First";
+// import Second from './components/Second'
 
 export default function Home() {
+
+
   return (
-  <div >
-    <Inicio
-     />
-  </div>
+  
+    <>
+       <First/> 
+       {/* <Second/> */}
+    </>
+   
   );
 }

@@ -24,6 +24,8 @@
 body {
   background: var(--background);
   color: var(--foreground);
+  padding: 0;
+  margin: 0;
 }
 
 .alfa-slab-one-regular {
@@ -31,3 +33,9 @@ body {
   font-weight: 800;
   font-style: normal;
 }
+
+/* 
+.purpleFont{
+
+  @apply text-[rgb(60,6,94)] font-bold text-center alfa-slab-one-regular leading-none transition-transform duration-1000 ease-in-out
+} */
