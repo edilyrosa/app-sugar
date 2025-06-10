@@ -5,6 +5,8 @@ import { useEffect, useRef, useState, CSSProperties } from "react";
 import Image from "next/image";
 import icon from "../assets/icon.png";
 import card from "../assets/2.png";
+// import { alfaSlabOne, openSans, geistMono, geistSans } from '@/app/components/utils/fonts'; // Adjust path as needed
+
 
 import Second from './Second';
 import Header from "./Header";
@@ -187,10 +189,12 @@ export default function Inicio() {
           `}
         >
           <Header/>
-          <h1 className="font-bold mb-4 text-[30px] sm:text-[50px] lg:text-[70px] 2xl:text-[80px]">
+          <h1 className={
+            `mb-4 text-[30px] sm:text-[50px] lg:text-[70px] 2xl:text-[80px]
+            ` }>
             YOUR HOME IS WEB3
           </h1>
-          <h2 className="pb-[5%] font-bold text-[20px] sm:text-[30px] lg:text-[50px] 2xl:text-[60px]">
+          <h2 className="font-geist-mono pb-[5%] text-[20px] sm:text-[30px] lg:text-[50px] 2xl:text-[60px]">
             do you wanna try? !
           </h2>
         </div>

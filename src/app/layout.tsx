@@ -2,22 +2,10 @@ import type { Metadata } from "next";
 //import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 // src/app/layout.js o src/app/layout.tsx
-import { Alfa_Slab_One } from 'next/font/google'
 
-const alfaSlabOne = Alfa_Slab_One({ subsets: ['latin'], weight: '400' })
-
+import { alfaSlabOne } from '@/app/components/utils/fonts'; // Adjust path as needed
 
 
-
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
-
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -32,8 +20,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${alfaSlabOne.className} antialiased`}
+        // className={`${openSans.className} ${geistSans.className} ${geistMono.className} ${alfaSlabOne.className}  antialiased`}
+      className={`${alfaSlabOne.className} antialiased`}
       >
+
+          {/* // className={` antialiased`}
+          > */}
+
         {children}
       </body>
     </html>
