@@ -2,11 +2,11 @@
 import { useEffect, useRef, useState, CSSProperties } from "react";
 import Image from "next/image";
 import icon from "../assets/icon.png";
-import card from "../assets/card.png"; // Assuming this is your "phone" image
-// import { alfaSlabOne, openSans, geistMono, geistSans } from '@/app/components/utils/fonts'; // Adjust path as needed
+import card from "../assets/card.png"; 
 
-import Second from './Second';
+//import Second from './Second';
 import Header from "./Header";
+import  {ParallaxCard }from "./ParallaxCard";
 
 const iconFinalPositions = [
   { min: 1536, top: "-10vh", right: "20vw" },
@@ -168,15 +168,6 @@ export default function Inicio() {
 
 
 
-
-
-
-
-
-
-
-
-
   // Escala para icono
   const scale = 1 - 0.8 * progress;
 
@@ -215,10 +206,6 @@ export default function Inicio() {
 
 
 
-
-
-
-
   return (
     <div
       ref={scrollContainerRef}
@@ -246,7 +233,7 @@ export default function Inicio() {
             `}>
             YOUR HOME IS WEB3
           </h1>
-          <h2 className="font-geist-mono pb-[5%] text-[20px] sm:text-[30px] lg:text-[50px] 2xl:text-[60px]">
+          <h2 className="pb-[5%] text-[20px] sm:text-[30px] lg:text-[50px] 2xl:text-[60px]">
             do you wanna try? !
           </h2>
         </div>
@@ -294,7 +281,8 @@ export default function Inicio() {
 
       {/* Tercera sección */}
       <div className="h-screen snap-start flex justify-center items-center relative">
-        <Second />
+        {/* <Second /> */}
+         <ParallaxCard />
       </div>
     </div>
 
