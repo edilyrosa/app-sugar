@@ -1,5 +1,5 @@
 
-import First from "./components/First";
+import First from "./components/First copy";
 // import Second from './components/Second'
 
 export default function Home() {
